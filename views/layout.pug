@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='/styles/reset.css')
+    link(rel='stylesheet', href='/styles/fonts.css')
+    link(rel='stylesheet', href='/styles/styles.css')
+    title Nathan deGraaf
+  body
+    header
+      h1 Nathan deGraaf
+    nav
+      ul
+          -for(let item of Object.keys(nav))
+            -let url = nav[item].href
+            li: a(href='/' + url) #{nav[item].title}
+    block content
+    footer
+      span
+        a(href='https://www.facebook.com/nathan.degraaf.12')
+          img#facebook(src='/pics/facebook.svg', alt='a link to facebook')
+        a(href='https://twitter.com/The_Real_Fludd')
+          img#twitter(src='/pics/twitter.svg', alt='a link to twitter')
+        a(href='https://www.twitch.tv/runicfreak')
+          img#twitch(src='/pics/twitch-brands.svg', alt='a link to twitch')
+      h6 © 2019 Nathan deGraaf
