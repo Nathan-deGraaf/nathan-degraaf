@@ -18,14 +18,14 @@ html, body {
     transition:0.4s;
   }
 
-  header nav ul{
+nav ul{
     
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
   
-    a {
-      text-decoration: none;
-      color: black;
-    }
+  a {
+    text-decoration: none;
+    color: black;
   }
+}

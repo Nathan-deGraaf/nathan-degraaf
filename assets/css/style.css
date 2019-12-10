@@ -1,10 +1,13 @@
 footer {
   padding: 2rem 1rem 1rem;
-  background-color: #313535; }
-  footer span a img {
-    width: 1vw;
-    height: 1vh;
-    min-width: 30px;
-    min-height: 30px;
-    padding: 0.2rem 1em;
-    margin: .2rem .5rem; }
+  background-color: #313535;
+  display: flex; }
+  footer .social-container {
+    align-items: center; }
+    footer .social-container a img {
+      width: 1vw;
+      height: 1vh;
+      min-width: 30px;
+      min-height: 30px;
+      padding: 0.2rem 1em;
+      margin: .2rem .5rem; }

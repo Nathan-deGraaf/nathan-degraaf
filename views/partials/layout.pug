@@ -14,19 +14,21 @@ html(lang='en')
       h1 Nathan deGraaf
       nav
         ul
-            -for(let item of Object.keys(nav))
-              -let url = nav[item].href
-              li: a(href='/' + url) #{nav[item].title}
+          -for(let item of Object.keys(nav))
+            -let url = nav[item].href
+            li: a(href='/' + url) #{nav[item].title}
         .btt
           a(href="#")
             img(src="/images/sticky-btt.svg")
     block content
     footer
       span.social-container
-        a(href='https://www.facebook.com/nathan.degraaf.12')
+        a(href='https://www.facebook.com/nathan.degraaf.12') 
           img#facebook(src='/images/facebook.svg', alt='a link to facebook')
-        a(href='https://twitter.com/The_Real_Fludd')
+        a(href='https://twitter.com/The_Real_Fludd') 
           img#twitter(src='/images/twitter.svg', alt='a link to twitter')
-        a(href='https://www.twitch.tv/runicfreak')
-          img#twitch(src='/images/twitch-brands.svg', alt='a link to twitch')
-      h6 © 2019 Nathan deGraaf
+        a(href='https://www.twitch.tv/runicfreak') 
+          img#twitch(src='/images/twitch-brands.svg', alt='a link to twitch') 
+        a(href="https://www.linkedin.com/in/nathan-de-graaf-57591a196/")
+          img#linkedIn(src='/images/linkedin.svg')
+        h6.copy © 2019 Nathan deGraaf

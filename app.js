@@ -35,11 +35,11 @@ app.post('/form', (req, res) => {
 
 
 app.use((err, req, res, next) => {
-  res.locals.head = err.head;
-  res.status(err.status || 404);
-  res.render('error404');
+  return res.status(500).render('error404');
 });
-
+app.use((err, req, res, next) => {
+  return res.status(404).render('error404');
+});
 
 const PORT = process.env.PORT || 3000
 

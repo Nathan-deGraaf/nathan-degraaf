@@ -1,11 +1,11 @@
-extends layout
+extends partials/layout
 
 block content
   main
     section.centered
       h2 Contact
       div.grid
-        form(action='/form', method='post', enctype='application/x-www-form-urlencoded')
+        form(action='https://formspree.io/xqkajerk', method='POST', enctype='application/x-www-form-urlencoded')
           fieldset
             legend Get in touch!
             section.form
@@ -17,6 +17,6 @@ block content
               input#email(type='email', name='email' placeholder='Please enter email', required)
 
               label.span2(for='comment') Comment
-              textarea#comment.span2(name='comment', cols='30', rows='10', placeholder='What would you like me to know?')
+              textarea#comment.span(name='comment', cols='30', rows='10', placeholder='What would you like me to know?')
 
               input#submit.span(type='submit', value='Send')
