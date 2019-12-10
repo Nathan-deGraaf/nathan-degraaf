@@ -4,7 +4,9 @@
   "description": "Portfolio",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "sass": "gulp sass:watch",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +19,11 @@
   },
   "homepage": "https://github.com/Nathan-deGraaf/nathan-degraaf#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0",
     "pug": "^2.0.4",
     "sass": "^1.23.7"
   }

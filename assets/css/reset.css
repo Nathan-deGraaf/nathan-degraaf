@@ -1,0 +1,24 @@
+html, body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0; }
+
+.btt {
+  position: fixed;
+  width: 50px;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.5;
+  transition: 0.4s; }
+
+.btt:hover {
+  opacity: 1;
+  transition: 0.4s; }
+
+header nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0; }
+  header nav ul a {
+    text-decoration: none;
+    color: black; }

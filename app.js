@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const pageInfo = require('./pageInfo');
-const inquiries = require('./inquiries')
+require('dotenv').config();
 
 const app = express();
 
