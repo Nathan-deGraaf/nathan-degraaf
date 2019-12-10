@@ -1,4 +1,42 @@
+.menu {
+  background: url("/images/menu.svg");
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  display: none; }
+
+.close {
+  background: url("/images/close.svg");
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  display: none; }
+
+@media all and (max-width: 650px) {
+  header ul {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: stretch;
+    transition: transform 0.3s;
+    transform: translateX(0px); }
+  .menu-open {
+    transform: translateX(-200px); }
+  .menu-close {
+    transform: translateX(0px); }
+  .menu {
+    display: block;
+    cursor: pointer; }
+  .close {
+    display: block;
+    cursor: pointer; } }
+
 footer {
+  margin-top: 2rem;
   padding: 2rem 1rem 1rem;
   background-color: #313535;
   display: flex; }
@@ -11,3 +49,7 @@ footer {
       min-height: 30px;
       padding: 0.2rem 1em;
       margin: .2rem .5rem; }
+
+.landing-footer h6 {
+  color: white;
+  font-size: 0.8rem; }

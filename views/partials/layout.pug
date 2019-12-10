@@ -13,10 +13,12 @@ html(lang='en')
     header
       h1 Nathan deGraaf
       nav
-        ul
+        ul#menu
+          #close.close
           -for(let item of Object.keys(nav))
             -let url = nav[item].href
             li: a(href='/' + url) #{nav[item].title}
+        #menu-button.menu
         .btt
           a(href="#")
             img(src="/images/sticky-btt.svg")
@@ -32,3 +34,4 @@ html(lang='en')
         a(href="https://www.linkedin.com/in/nathan-de-graaf-57591a196/")
           img#linkedIn(src='/images/linkedin.svg')
         h6.copy © 2019 Nathan deGraaf
+    script(src="/js/script.js")
