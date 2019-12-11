@@ -25,7 +25,6 @@ app.get('/:page', (req, res) => {
   });
 });
 
-
 app.use((err, req, res, next) => {
   return res.status(500).render('error');
 });

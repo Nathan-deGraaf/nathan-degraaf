@@ -3,7 +3,7 @@ const pageInfo = {
     href: 'index',
     title: 'Home',
   },
-  Portfolio: {
+  portfolio: {
     href: 'portfolio',
     title: 'Portfolio',
   },

@@ -4,7 +4,9 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    meta(name="keywoards" content="Nathan, deGraaf, portfolio, examples, ")
+    meta(name="keywoards", content="Nathan, deGraaf, portfolio, examples, ")
+    meta(name="description", content="Nathan deGraaf Landing Page")
+    link(rel="icon", href="/images/favicon.png")
     link(rel='stylesheet', href='/css/reset.css')
     link(rel='stylesheet', href='/css/fonts.css')
     link(rel='stylesheet', href='/css/style.css')
@@ -15,9 +17,10 @@ html(lang='en')
       nav
         ul#menu
           #close.close
-          -for(let item of Object.keys(nav))
-            -let url = nav[item].href
-            li: a(href='/' + url) #{nav[item].title}
+          li: a(href='index') Home
+          li: a(href='portfolio') Portfolio
+          li: a(href='about') About
+          li: a(href='form') Contact
         #menu-button.menu
         .btt
           a(href="#")

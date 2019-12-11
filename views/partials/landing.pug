@@ -5,17 +5,19 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     meta(name="keywoards" content="Nathan, deGraaf, portfolio, examples, ")
+    link(rel="icon", href="/images/favicon.png")
     link(rel='stylesheet', href='/css/reset.css')
     link(rel='stylesheet', href='/css/fonts.css')
     link(rel='stylesheet', href='/css/style.css')
     title Nathan-deGraaf
   body
     header
-    block content
+      block content
     nav
       ul
-        -for(let item of Object.keys(nav))
-          -let url = nav[item].href
-          li: a(href='/' + url) #{nav[item].title}
+        li: a(href='index') Home
+        li: a(href='portfolio') Portfolio
+        li: a(href='about') About
+        li: a(href='form') Contact
     footer.landing-footer
       h6 © 2019 Nathan deGraaf

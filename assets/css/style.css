@@ -1,3 +1,11 @@
+.logo {
+  width: 30vw;
+  height: 30vh; }
+
+.landing-footer h6 {
+  color: white;
+  font-size: 0.8rem; }
+
 .menu {
   background: url("/images/menu.svg");
   width: 30px;
@@ -49,7 +57,3 @@ footer {
       min-height: 30px;
       padding: 0.2rem 1em;
       margin: .2rem .5rem; }
-
-.landing-footer h6 {
-  color: white;
-  font-size: 0.8rem; }
