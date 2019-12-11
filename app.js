@@ -26,19 +26,11 @@ app.get('/:page', (req, res) => {
 });
 
 
-app.post('/form', (req, res) => {
-  res.render('thankYou', {
-    name: req.body.name,
-    email: req.body.email
-  });
-})
-
-
 app.use((err, req, res, next) => {
-  return res.status(500).render('error404');
+  return res.status(500).render('error');
 });
 app.use((err, req, res, next) => {
-  return res.status(404).render('error404');
+  return res.status(404).render('error');
 });
 
 const PORT = process.env.PORT || 3000

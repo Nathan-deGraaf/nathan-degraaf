@@ -4,7 +4,6 @@
   "description": "Portfolio",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
     "sass": "gulp sass:watch",
     "dev": "nodemon app.js"
   },
