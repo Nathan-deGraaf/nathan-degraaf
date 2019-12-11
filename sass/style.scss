@@ -5,16 +5,25 @@ body {
   background: black;
 }
 
+.landing-container {
+  display: grid;
+}
+
 .logo {
   width: 30vw;
   height: 30vh;
 }
 
+.landing-title {
+  color: aliceblue;
+}
+
 .landing-footer {
-  h6{
-    color: white;
-    font-size: 0.8rem;
-  }
+  background: black;
+    h6{
+      color: white;
+      font-size: 0.8rem;
+    }
 }
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////MOBILE MENU ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -162,11 +171,11 @@ footer {
 	filter: blur(10px);
 }
 #h, #a-2, #a-4, #g {
-	animation: flickerl2 4s linear reverse infinite
+	animation: flickerl2 4s linear reverse infinite;
 }
 
 #n-1, #n-2, #f {
-	animation: flickero 4s linear reverse infinite
+	animation: flickero 4s linear reverse infinite;
 }
 
 @keyframes flickere {
@@ -306,19 +315,19 @@ footer {
 
 @keyframes flickero {
 	0% {
-		opacity: 0.03;
-	}
-	5% {
 		opacity: 0.05;
 	}
+	5% {
+		opacity: 0.07;
+	}
 	10% {
-		opacity: 0.03;
+		opacity: 0.05;
 	}
 	15% {
-		opacity: 0.1;
+		opacity: 0.13;
 	}
 	25% {
-		opacity: 0.07;
+		opacity: 0.09;
 	}
 	30% {
 		opacity: 0.1;
@@ -346,5 +355,55 @@ footer {
 	}
 	100% {
 		opacity: 0.1;
+	}
+}
+
+.landing-title {
+  animation: flicker 4s linear reverse infinite;
+  color: rgb(216, 162, 142);;
+}
+
+@keyframes flicker {
+	0% {
+		opacity: 0.6;
+	}
+	5% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.65;
+	}
+	15% {
+		opacity: 0.85;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0.2;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0.85;
+	}
+	80% {
+		opacity: 0.6;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
 	}
 }
