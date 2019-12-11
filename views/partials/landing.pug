@@ -10,14 +10,14 @@ html(lang='en')
     link(rel='stylesheet', href='/css/fonts.css')
     link(rel='stylesheet', href='/css/style.css')
     title Nathan-deGraaf
-  body
+  body.landing-body
     header
       block content
-    nav
-      ul
-        li: a(href='index') Home
-        li: a(href='portfolio') Portfolio
-        li: a(href='about') About
-        li: a(href='form') Contact
+    nav.landing-nav
+      ul.landing-list-container
+        li.landing-li: a.landing(href='index') Home
+        li.landing-li: a.landing(href='portfolio') Portfolio
+        li.landing-li: a.landing(href='about') About
+        li.landing-li: a.landing(href='form') Contact
     footer.landing-footer
       h6 © 2019 Nathan deGraaf

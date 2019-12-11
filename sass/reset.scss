@@ -24,8 +24,12 @@ nav ul{
   padding-left: 0;
   margin: 0;
   
-  a {
+  a.landing {
     text-decoration: none;
     color: aliceblue;
+  }
+  a {
+    text-decoration: none;
+    color: black;
   }
 }
