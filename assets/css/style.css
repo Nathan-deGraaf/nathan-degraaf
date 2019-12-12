@@ -316,11 +316,11 @@ footer {
   30% {
     opacity: 1; }
   35% {
-    opacity: 0.2; }
+    opacity: 0.4; }
   40% {
-    opacity: 0.25; }
-  45% {
     opacity: 0.5; }
+  45% {
+    opacity: 0.7; }
   60% {
     opacity: 1; }
   70% {
