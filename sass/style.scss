@@ -2,7 +2,8 @@
 ////////////////////////Landing Page ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .landing-body {
-  background: radial-gradient(circle, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 50%);
+  background: radial-gradient(circle at center, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 50%);
+  height: 100vh;
 }
 
 .landing-container {
@@ -11,8 +12,8 @@
 
     .logo {
       padding: 2rem 0 2rem;
-      width: 25vmax;
-      height: 25vmax;
+      width: 23vmax;
+      height: 23vmax;
       align-self: center;
     }
     .light-1 {

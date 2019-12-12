@@ -1,13 +1,14 @@
 .landing-body {
-  background: radial-gradient(circle, #0a100f 0%, black 50%); }
+  background: radial-gradient(circle at center, #0a100f 0%, black 50%);
+  height: 100vh; }
 
 .landing-container {
   display: flex;
   flex-direction: column; }
   .landing-container .logo {
     padding: 2rem 0 2rem;
-    width: 25vmax;
-    height: 25vmax;
+    width: 23vmax;
+    height: 23vmax;
     align-self: center; }
   .landing-container .light-1 {
     padding-right: 100px;
