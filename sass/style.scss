@@ -274,23 +274,35 @@ main{
 
 footer {
   padding: 2rem 1rem 1rem;
-  background-color: rgb(49, 53, 53);
-
-  display: flex;
+  background: radial-gradient(ellipse at center, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 50%);
   .social-container {
-    align-items: center;
-    a img {
-      width: 1vw;
-      height: 1vh;
-      min-width: 30px;
-      min-height: 30px;
-      padding: 0.2rem 1em;
-      margin: .2rem .5rem;
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      align-items: center;
     }
+      img {
+        width: 1vw;
+        height: 1vh;
+        min-width: 40px;
+        min-height: 40px;
+        padding: 0.2rem .5em;
+        margin: 0 .5rem;
+
+      }
   }
 }
-
+h6 {
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+}
+.address {
+  margin-top: 0.5rem;
+}
 // *****************************************************************************
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////ANIMATIONS//////////////////////////////////////////
