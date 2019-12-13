@@ -72,6 +72,10 @@
   .header .light-2 {
     align-self: center;
     padding-left: 100px; }
+  .header .center {
+    align-self: center; }
+  .header .landing-title {
+    margin-bottom: 0.2rem; }
 
 nav ul {
   display: flex;
