@@ -102,9 +102,11 @@
   padding: 3rem;
   .light-1 {
     align-self: center;
+    padding-right: 100px;
   }
   .light-2 {
     align-self: center;
+    padding-left: 100px;
   }
 }
 
@@ -302,6 +304,9 @@ h6 {
 }
 .address {
   margin-top: 0.5rem;
+}
+.ph {
+  margin-bottom: 0.5rem;
 }
 // *****************************************************************************
 ////////////////////////////////////////////////////////////////////////////////

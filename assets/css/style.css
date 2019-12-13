@@ -67,9 +67,11 @@
   flex-direction: column;
   padding: 3rem; }
   .header .light-1 {
-    align-self: center; }
+    align-self: center;
+    padding-right: 100px; }
   .header .light-2 {
-    align-self: center; }
+    align-self: center;
+    padding-left: 100px; }
 
 nav ul {
   display: flex;
@@ -217,6 +219,9 @@ h6 {
 
 .address {
   margin-top: 0.5rem; }
+
+.ph {
+  margin-bottom: 0.5rem; }
 
 #n-1, #n-2, #a-1, #a-2, #a-3, #a-4, #t, #h, #d, #e, #g, #r, #f {
   margin: 0;
