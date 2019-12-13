@@ -130,6 +130,12 @@ main {
 .logos {
   background: white; }
 
+@media all and (max-width: 900px) {
+  .header .light-1 {
+    padding-right: 70px; }
+  .header .light-2 {
+    padding-left: 70px; } }
+
 .menu {
   background: url("/images/menu.svg");
   width: 35px;
