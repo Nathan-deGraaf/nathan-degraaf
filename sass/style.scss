@@ -99,17 +99,7 @@
   background: radial-gradient(circle at center, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 50%);
   display: flex;
   flex-direction: column;
-  padding: 0 0 3rem;
-  .logo-home {
-    display: flex;
-    flex-direction: column;
-    z-index: 3;
-    .logo {
-      width: 10vmax;
-      height: 10vmax;
-      align-self: center;
-    }
-  }
+  padding: 3rem 0 3rem;
   .light-1 {
     align-self: center;
     padding-right: 100px;
@@ -202,11 +192,6 @@ main{
       .light-2 {
         padding-left: 70px;
       }
-   }
-}
-@media all and (max-width: 650px){
-  .header {
-    padding: 0;
    }
 }
 ////////////////////////////////////////////////////////////////////////////////
