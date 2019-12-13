@@ -221,7 +221,6 @@ main {
   font-size: 1.8rem; }
 
 .about-p {
-  text-indent: 6ch;
   margin: 2rem auto 0 auto;
   padding-bottom: 2rem;
   text-align: center;
@@ -261,6 +260,13 @@ main {
       background: white; }
   .about .about-gallery:hover {
     transform: scale(1.2); }
+
+.google-map {
+  display: flex;
+  justify-content: center;
+  border: none;
+  margin: 2rem 0 0;
+  padding-bottom: 4rem; }
 
 section.centered {
   display: grid;
