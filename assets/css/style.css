@@ -179,7 +179,7 @@ main {
         color: white;
         font-size: 1.5rem; }
       nav ul li a:hover {
-        background: #050505; }
+        background: transparent; }
   header ul {
     position: fixed;
     top: 0;
@@ -187,6 +187,8 @@ main {
     width: 200px;
     height: 50vh;
     background-color: #050505;
+    border-left: 2px solid rgba(252, 118, 69, 0.333);
+    border-bottom: 1px solid rgba(252, 118, 69, 0.333);
     flex-direction: column;
     justify-content: stretch;
     transition: transform 0.3s;
@@ -207,6 +209,100 @@ main {
     top: 20px;
     right: 20px;
     cursor: pointer; } }
+
+section.centered {
+  display: grid;
+  grid-template: .2fr 1fr / 1fr; }
+  section.centered .contact {
+    margin: 0;
+    color: white;
+    text-align: center;
+    align-self: center; }
+  section.centered .grid {
+    justify-self: center;
+    align-self: center; }
+    section.centered .grid form {
+      width: 60vw;
+      margin: 1em;
+      background-color: transparent;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 6px 4px rgba(0, 0, 0, 0.15);
+      grid-column: 2 / 3;
+      grid-row: 3 / 5;
+      justify-self: center;
+      align-content: center; }
+      section.centered .grid form fieldset {
+        border: 0; }
+        section.centered .grid form fieldset legend {
+          display: none; }
+        section.centered .grid form fieldset .form {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-row-gap: 1rem; }
+          section.centered .grid form fieldset .form label {
+            font-size: 1.2rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          section.centered .grid form fieldset .form input {
+            width: 50%;
+            min-width: 1%;
+            padding: 1rem;
+            border-radius: 25px;
+            border: none;
+            justify-self: center; }
+          section.centered .grid form fieldset .form textarea {
+            width: 75%;
+            min-width: 1%;
+            padding: 1rem;
+            border-radius: 25px;
+            border: none;
+            justify-self: center; }
+          section.centered .grid form fieldset .form #name {
+            margin-top: 1rem; }
+          section.centered .grid form fieldset .form #email {
+            margin-top: 1rem; }
+          section.centered .grid form fieldset .form #comment {
+            margin-top: 1rem; }
+          section.centered .grid form fieldset .form #submit {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding: 1rem 2rem 1rem 2rem;
+            font-size: 1rem;
+            font-variant: small-caps;
+            border: 1px solid white;
+            border-radius: 0.25rem;
+            background: rgba(252, 118, 69, 0.333);
+            color: white;
+            transition: 0.3s;
+            cursor: pointer; }
+          section.centered .grid form fieldset .form #submit:hover {
+            background: rgba(252, 118, 69, 0.75);
+            transition: 0.3s; }
+          section.centered .grid form fieldset .form .span {
+            max-width: 20%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            grid-column: span 2; }
+          section.centered .grid form fieldset .form .span2 {
+            grid-column: span 2;
+            display: flex;
+            justify-content: center; }
+          section.centered .grid form fieldset .form .required::after {
+            content: ':'; }
+
+@media all and (max-width: 650px) {
+  section.centered .grid form {
+    width: 85vw; }
+    section.centered .grid form fieldset {
+      border: 0; }
+      section.centered .grid form fieldset legend {
+        display: none; }
+      section.centered .grid form fieldset .form input {
+        width: 75%; } }
 
 footer {
   padding: 2rem 1rem 1rem;
