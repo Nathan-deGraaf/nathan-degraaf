@@ -96,7 +96,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //////////////////////////// PORTFOLIO GALLERY /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .header {
-  background: radial-gradient(circle at center, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 50%);
+  background: radial-gradient(circle at center, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 25%);
   display: flex;
   flex-direction: column;
   padding: 3rem 0 3rem;
@@ -147,6 +147,7 @@ main{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 
   .gallery-header {
     width: 100%;
@@ -168,6 +169,10 @@ main{
       min-width: 300px;
       transition:0.4s; 
     }
+      .description {
+        color: white;
+        text-align: center;
+      }
     .logos{
       width: 20vw;
       margin: 0;
@@ -311,6 +316,11 @@ footer {
         padding: 0.2rem .5em;
         margin: 0 .5rem;
 
+        transition: 0.2s;
+      }
+      img:hover {
+        transform: scale(1.2);
+        transition: 0.2s;
       }
   }
 }

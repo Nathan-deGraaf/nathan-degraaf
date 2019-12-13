@@ -62,7 +62,7 @@
         font-size: 0.8rem; } }
 
 .header {
-  background: radial-gradient(circle at center, #0a100f 0%, black 50%);
+  background: radial-gradient(circle at center, #0a100f 0%, black 25%);
   display: flex;
   flex-direction: column;
   padding: 3rem 0 3rem; }
@@ -101,7 +101,8 @@ main {
 .gallery {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .gallery .gallery-header {
     width: 100%;
     color: white;
@@ -119,6 +120,9 @@ main {
       border-radius: 5px;
       min-width: 300px;
       transition: 0.4s; }
+    .gallery .gallery-div .description {
+      color: white;
+      text-align: center; }
     .gallery .gallery-div .logos {
       width: 20vw;
       margin: 0;
@@ -220,7 +224,11 @@ footer {
       min-width: 40px;
       min-height: 40px;
       padding: 0.2rem .5em;
-      margin: 0 .5rem; }
+      margin: 0 .5rem;
+      transition: 0.2s; }
+    footer .social-container img:hover {
+      transform: scale(1.2);
+      transition: 0.2s; }
 
 h6 {
   margin: 0;
