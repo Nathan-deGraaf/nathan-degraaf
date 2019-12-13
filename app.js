@@ -14,14 +14,12 @@ app.use(express.urlencoded({extended: false}));
 
 app.get('/', (req, res) => {
   res.render('index', {
-    nav: pageInfo
   });
 });
 
 
 app.get('/:page', (req, res) => {
   res.render(req.params.page, {
-    nav: pageInfo
   });
 });
 
