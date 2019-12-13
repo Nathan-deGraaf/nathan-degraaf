@@ -99,7 +99,17 @@
   background: radial-gradient(circle at center, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 50%);
   display: flex;
   flex-direction: column;
-  padding: 3rem 0 3rem;
+  padding: 0 0 3rem;
+  .logo-home {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    .logo {
+      width: 10vmax;
+      height: 10vmax;
+      align-self: center;
+    }
+  }
   .light-1 {
     align-self: center;
     padding-right: 100px;
@@ -109,7 +119,6 @@
     padding-left: 100px;
   }
 }
-
 nav {
   ul {
     display: flex;
@@ -195,6 +204,11 @@ main{
       }
    }
 }
+@media all and (max-width: 650px){
+  .header {
+    padding: 0;
+   }
+}
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////MOBILE MENU ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .menu {
@@ -228,8 +242,9 @@ main{
       display: flex;
       padding: 0;
       li {
-        margin-top: 2rem;
+        margin-top: 0.7rem;
         a {
+          display: block;
           padding: 1rem 4vw;
           border-top:none;
           border-bottom:none;
@@ -531,25 +546,25 @@ h6 {
 
 @keyframes flickero {
 	0% {
-		opacity: 0.05;
+		opacity: 0.08;
 	}
 	5% {
-		opacity: 0.07;
+		opacity: 0.1;
 	}
 	10% {
-		opacity: 0.05;
+		opacity: 0.08;
 	}
 	15% {
 		opacity: 0.13;
 	}
 	25% {
-		opacity: 0.09;
+		opacity: 0.08;
 	}
 	30% {
 		opacity: 0.1;
 	}
 	35% {
-		opacity: 0.05;
+		opacity: 0.09;
 	}
 	40% {
 		opacity: 0.06;
