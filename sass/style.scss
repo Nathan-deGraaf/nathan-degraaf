@@ -142,7 +142,10 @@ nav {
   }
 }
 
-main{
+main {
+  background: radial-gradient(circle at center, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 50%);
+}
+.about-main {
   background: radial-gradient(circle at center, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 50%);
 }
 
@@ -391,6 +394,7 @@ main{
   }
 }
 
+// taken out, no need
 .google-map{
   display:flex;
   justify-content: center;
@@ -540,7 +544,7 @@ section.centered {
 
 footer {
   padding: 2rem 1rem 1rem;
-  background: radial-gradient(ellipse at center, rgb(10, 16, 15) 0%, rgb(0, 0, 0) 50%);
+  background: radial-gradient(ellipse at center, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%);
   .social-container {
     display: flex;
     flex-flow: row wrap;

@@ -98,6 +98,9 @@ nav ul {
 main {
   background: radial-gradient(circle at center, #0a100f 0%, black 50%); }
 
+.about-main {
+  background: radial-gradient(circle at center, #0a100f 0%, black 50%); }
+
 .gallery {
   display: flex;
   flex-flow: row wrap;
@@ -382,7 +385,7 @@ section.centered {
 
 footer {
   padding: 2rem 1rem 1rem;
-  background: radial-gradient(ellipse at center, #0a100f 0%, black 50%); }
+  background: radial-gradient(ellipse at center, black 0%, black 50%); }
   footer .social-container {
     display: flex;
     flex-flow: row wrap;
